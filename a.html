@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurangnya Rasa Peduli Akan Sampah</title>
+    <script src="main.js"></script>
+    <style>
+body {
+    background-image: url("test\ doang.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: yellow;
+        }
+        
+
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .text {
+            font-size: 24px;
+            opacity: 0;
+            animation: fade-in 5s ease-in-out forwards;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fade-in 5s ease-in-out forwards;
+        }        
+
+        /* Video */
+        .video-container {
+            margin-top: 20px;
+            opacity: 0;
+            animation: fade-in 5s ease-in-out forwards;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Animasi Fade In */
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Urutan Animasi */
+        #text1 {
+            animation-delay: 0s;
+        }
+
+        #text2 {
+            animation-delay: 5s;
+        }
+
+        #text3 {
+            animation-delay: 10s;
+        }
+
+        #text4 {
+            animation-delay: 15s;
+        }
+
+        #text5 {
+            animation-delay: 20s;
+        }
+
+        #circle {
+            animation-delay: 25s;
+        }
+
+        #video {
+            animation-delay: 30s;
+        }
+
+        #message1 {
+            animation-delay: 35s;
+        }
+
+        #message2 {
+            animation-delay: 40s;
+        }
+
+        #message3 {
+            animation-delay: 45s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="text1" class="text">Dunia Tenggelam Dalam Sampah.</div>
+        <div id="text2" class="text">Setiap tahun, jutaan ton sampah dihasilkan.</div>
+        <div id="text3" class="text">Hanya sebagian kecil yang didaur ulang.</div>
+        <div id="text4" class="text">Sisanya berakhir di lautan,jalanan dan tempat sampah.</div>
+        <div id="text5" class="text">Tapi kita bisa membuat perubahan.</div>
+        <!-- Penambahan Video -->
+        <div id="video" class="video-container">
+            <video controls>
+                <source src="pandawara.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="message1" class="text">Mengurangi. Menggunakan kembali. Mendaur ulang.</div>
+        <div id="message2" class="text">Tindakan kecil membawa perubahan besar.</div>
+        <div id="message3" class="text">Bersama, mari kita bersihkan planet kita.</div>
+    </div>
+
+    <script>
+        // JavaScript to control the animation timing or additional effects can be added here
+    </script>
+</body>
+</html>
